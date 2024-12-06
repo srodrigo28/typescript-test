@@ -1,29 +1,29 @@
 ### Projeto test unitários com Jest TypeScript
 
 #### Criando o projeto
-* 1. criando o projeto
+* <b>1.</b> criando o projeto
 ```
 npm init -y
 ```
 
-* 2. instalando dependências
+* <b>2.</b> instalando dependências
 ```
 npm i typescript jest @types/jest ts-jest
 ```
 
-* 3. iniciando o typescript
+* <b>3.</b> iniciando o typescript
 ```
 npx tsc --init
 ```
 
-* 4. configurando o package.json
+* <b>4.</b> configurando o package.json
 ```
 "scripts": {
     "test": "jest"
 },
 ```
 
-* 5. criar arquivo na raiz jest.config.js
+* <b>5.</b> criar arquivo na raiz jest.config.js
 ```
 module.exports={
     preset: "ts-jest",
@@ -32,13 +32,13 @@ module.exports={
 }
 ```
 
-* 6. rodando o projeto
+* <b>6.</b> rodando o projeto
 ```
 npm test
 ```
 
 #### Modelo inicial
-* 1. criar pasta src
+* <b>1.</b> criar pasta src
     * soma.ts
 ```
 export function soma(a:number, b:number){
@@ -46,7 +46,7 @@ export function soma(a:number, b:number){
 }
 ```
 
-* 2. criar pasta test
+* <b>2.</b> criar pasta test
     * soma.test.ts
 ```
 import { soma } from "../src/soma";
